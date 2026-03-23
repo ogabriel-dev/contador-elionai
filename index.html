@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elionai Corrêa | Contador Especialista IRPF</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">Elionai<span>Corrêa</span></div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato" class="btn-nav">Falar com Especialista</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Seu Imposto de Renda <span>sem complicação</span></h1>
+          <p>
+            Evite erros, pague apenas o necessário e aumente sua restituição com
+            quem entende do assunto.
+          </p>
+          <div class="hero-btns">
+            <a href="#contato" class="btn-primary">Fazer minha declaração</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="assets/elionai.jpeg" alt="Elionai Corrêa" />
+        </div>
+      </div>
+    </header>
+
+    <section id="sobre" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2>Tranquilidade e Segurança</h2>
+            <p>
+              Sou <strong>Elionai Corrêa</strong>, contador especializado em
+              IRPF. Meu objetivo é oferecer um atendimento simples, transparente
+              e seguro, cuidando de cada detalhe da sua declaração como se fosse
+              única.
+            </p>
+            <p>
+              Atendo desde declarações simples até situações complexas como
+              investimentos e ganho de capital.
+            </p>
+          </div>
+          <div class="about-features">
+            <h3>Por que contar comigo?</h3>
+            <ul>
+              <li>✔ Análise completa para evitar malha fina</li>
+              <li>✔ Orientação para pagar menos imposto dentro da lei</li>
+              <li>✔ Suporte antes, durante e após a entrega</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="services">
+      <div class="container">
+        <h2 class="section-title">Especialidades</h2>
+        <div class="grid-services">
+          <div class="card">
+            <h3>Rendimentos</h3>
+            <p>Múltiplas fontes e recebimentos do exterior.</p>
+          </div>
+          <div class="card">
+            <h3>Investimentos</h3>
+            <p>Ações, criptomoedas, fundos e ETFs.</p>
+          </div>
+          <div class="card">
+            <h3>Ganho de Capital</h3>
+            <p>Venda de bens e imóveis com apuração de lucro.</p>
+          </div>
+          <div class="card">
+            <h3>Regularização</h3>
+            <p>Carnê-leão e pendências com a Receita Federal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Análise Personalizada</h2>
+          <p>Envie seus dados para uma avaliação do seu caso.</p>
+          <div class="form-group">
+            <input type="text" id="nome" placeholder="Seu nome completo" />
+            <textarea
+              id="mensagem"
+              placeholder="Descreva brevemente sua situação..."
+            ></textarea>
+            <button onclick="enviarWhatsapp()" class="btn-send">
+              Enviar para o WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
