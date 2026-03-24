@@ -6,7 +6,7 @@
     --bg-light: #f9fafb;
 }
 
-/* 1. RESET & BASE - O segredo do scroll está aqui */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,12 +25,10 @@ body {
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
-    /* Isso mata o arrasto lateral */
     position: relative;
     width: 100%;
 }
 
-/* Trava o scroll do corpo apenas quando o menu estiver aberto (via JS) */
 body.menu-open {
     overflow: hidden;
     height: 100vh;
@@ -42,7 +40,7 @@ body.menu-open {
     padding: 0 20px;
 }
 
-/* 2. NAVBAR REFEITA */
+
 .navbar {
     height: 80px;
     background: rgba(255, 255, 255, 0.95);
@@ -98,7 +96,6 @@ body.menu-open {
     border-radius: 8px;
 }
 
-/* 3. HERO SECTION - Ajustada para conversão */
 .hero {
     padding: 100px 0;
     background: white;
@@ -110,7 +107,6 @@ body.menu-open {
     gap: 40px;
     flex-wrap: wrap;
     overflow: hidden;
-    /* trava qualquer escape */
 }
 
 .hero-text {
@@ -135,7 +131,6 @@ body.menu-open {
     margin-bottom: 32px;
 }
 
-/* Botão do Hero corrigido */
 .hero-btns a.btn-primary {
     background-color: var(--primary);
     color: white;
@@ -160,7 +155,6 @@ body.menu-open {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
 }
 
-/* 4. SOBRE E SERVIÇOS */
 .about {
     padding: 100px 0;
     background: var(--bg-light);
@@ -205,7 +199,6 @@ body.menu-open {
     margin-bottom: 12px;
 }
 
-/* 5. CONTATO PREMIUM */
 .contact {
     padding: 100px 0;
 }
@@ -254,7 +247,6 @@ textarea {
     transform: scale(1.02);
 }
 
-/* 6. MENU MOBILE - SISTEMA ANTI-VAZAMENTO */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -276,7 +268,6 @@ textarea {
         display: flex;
     }
 
-    /* Transformação do X */
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
@@ -294,9 +285,7 @@ textarea {
         top: 0;
         right: 0;
         transform: translateX(100%);
-        /* ESCONDE de verdade */
         width: 100vw;
-        /* usa viewport real */
         height: 100vh;
         background: var(--white);
         flex-direction: column;
